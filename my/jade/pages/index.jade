@@ -1,0 +1,105 @@
+extends ../layout
+
+block body
+  include ../includes/header
+  include ../includes/header_mobile
+  .index-banner.lazy(data-original="my/img/1.jpg")
+
+  .container.index
+    .index-title 
+      span.iconfont.icon-weibiaoti102 精选推荐
+    .article-lists
+      mixin article-list
+        .article-list
+          a(href="detail.html")
+            .art-tag 融资／Finance
+            .art-banner.lazy(data-original="my/img/1.jpg")
+            p.art-title 教你认识资本市场，掌握企业融资工具！
+            p.art-brief 如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知
+          .art-tool
+            span.like
+              i.iconfont.icon-heart
+              | 35145
+
+      +article-list
+      +article-list
+      +article-list
+      +article-list
+      +article-list
+      +article-list
+      +article-list
+      +article-list
+      +article-list
+    a(href="").reco-loadmore 加载更多
+    .follow-steps
+      .steps.step1
+        ul.rounds
+          i.iconfont.icon-yuyue
+          li.round.round1
+          li.round.round2
+          li.round.round3
+          li.round.round4
+          li.round.round5
+          li.round.round6
+          li.round.round7
+          li.round.round8
+        p.top 选择分享者
+        p 在线预约
+      .steps.step2
+        ul.rounds
+          i.iconfont.icon-qian
+          li.round.round1
+          li.round.round2
+          li.round.round3
+          li.round.round4
+          li.round.round5
+          li.round.round6
+          li.round.round7
+          li.round.round8
+        p.top  分享者确认
+        p 支付预约费用
+      .steps.step3
+        ul.rounds
+          i.iconfont.icon-wentiguanli
+          li.round.round1
+          li.round.round2
+          li.round.round3
+          li.round.round4
+          li.round.round5
+          li.round.round6
+          li.round.round7
+          li.round.round8
+        p.top 上门分享
+        p 答疑解惑
+      .steps.step4
+        ul.rounds
+          i.iconfont.icon-write
+          li.round.round1
+          li.round.round2
+          li.round.round3
+          li.round.round4
+          li.round.round5
+          li.round.round6
+          li.round.round7
+          li.round.round8
+        p.top 点评收获
+        p 和感受
+        
+        
+
+      
+
+
+
+
+
+
+
+
+
+
+
+  include ../includes/footer
+
+block script
+  script(src="public/js/cbd.min.js")

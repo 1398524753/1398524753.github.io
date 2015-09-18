@@ -1,0 +1,283 @@
+.detail-banner
+  width: 100%
+  height: 450px
+  overflow: hidden
+  position: relative
+  .container
+    position: absolute
+    z-index: 1001
+    top: 120px
+    left: 50%
+    transform: translate(-50%)
+    color: white
+  h1.title
+    font-size: 40px
+  p.brief
+    font-size: 18px
+.order-steps
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 3000
+  background: rgba(255,255,255,0.9)
+  .container
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 500px
+    // height: 500px
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.3)
+    
+    padding: 50px
+    border-radius: 4px
+    background: white
+    ul.top
+      list-style: none
+      padding-bottom: 20px
+      border-bottom: $border1
+      overflow: hidden
+      li
+        width: 20%
+        float: left
+        text-align: center
+        position: relative
+        &:after
+          content: ""
+          width: 60px
+          height: 3px
+          background: $main-color
+          position: absolute
+          top: 75%
+        .step
+          width: 20px
+          height: 20px
+          line-height: 20px
+          border-radius: 50%
+          background: $main-color
+          display: inline-block
+          color: white
+          margin-top: 10px
+      .step5-con
+        &:after
+          display: none
+    .title
+      font-size: 20px
+      color: $main-color
+      font-weight: bold
+      margin-top: 10px
+    .form-group
+      width: 100%
+      .input-group
+        width: 100%
+        position: relative
+        margin: 15px 0
+        input,textarea
+          width: 100%
+          height: 35px
+          line-height: 35px
+          border: $border1
+          padding: 0 10px
+        i.iconfont
+          position: absolute
+          display: none
+          left: 10px
+          top: 50%
+          transform: translateY(-50%)
+          color: rgba(0,0,0,0.4)
+        textarea
+          height: 60px
+          line-height: 20px
+          padding: 10px
+          resize: none
+      .submit
+        input
+          border: none
+          background: $main-color
+          color: white
+          &:hover
+            background: darken($main-color, 10%)
+      .agreement
+        text-align: center
+
+
+
+
+
+
+
+
+
+
+
+.pro-detail
+  .order-top
+    width: 100%
+    height: 50px
+    background: white
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 2000
+    box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.2)
+    line-height: 50px
+    display: none
+    transtion: 0.3s ease-in
+    .container
+      padding: 0 10px
+      position: relative
+      p.title
+        position: relative
+        margin-left: 5px
+        font-size: 20px
+        &:before
+          content: ""
+          position: absolute
+          left: -10px
+          top: 12px
+          width: 5px
+          height: 25px
+          background: $main-color
+      .pro-order
+        padding: 0 20px
+        background: $main-color
+        color: white
+        font-size: 14px
+        display: inline-block
+        line-height: 36px
+        border-radius: 4px
+        margin-top: 7px
+        position: absolute
+        right: 0
+        top: 0
+        cursor: pointer
+        &:hover
+          background: darken($main-color, 10%)
+
+  .pro-detail-top
+    background: white
+    margin: 30px auto
+    padding: 0 85px
+    border-radius: 2px
+    overflow: hidden
+    border-top: 2px solid $main-color
+    .price-info
+      width: 400px
+      margin: 0 auto
+      ul
+        list-style: none
+        overflow: hidden
+        li
+          width: 50%
+          text-align: center
+          float: left
+          font-size: 18px
+          margin: 20px 0
+      .top
+        border-bottom: $border1
+      .bottom
+        li
+          margin: 20px 0
+          height: 36px
+        .left
+          .price
+            font-size: 25px
+            color: $main-color
+          .unit
+            font-size: 12px
+            color: rgba(0,0,0,0.8)
+        .right
+          .pro-order
+            padding: 0 20px
+            background: $main-color
+            color: white
+            font-size: 14px
+            display: inline-block
+            height: 100%
+            line-height: 36px
+            border-radius: 4px
+            margin-top: 7px
+            cursor: pointer
+            &:hover
+              background: darken($main-color, 10%)
+    .detail-list
+      width: 100%
+      padding: 30px 0
+      padding-bottom: 50px
+      border-top: $border1
+      p.title
+        font-size: 18px
+        color: $main-color
+        text-align: center
+      p.detail
+        margin-top: 20px
+        line-height: 30px
+        padding: 0 80px
+        position: relative
+        .iconfont
+          position: absolute
+          color: rgba(0,0,0,0.4)
+          &:hover
+            color: $main-color
+        .previous
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+          font-size: 40px
+        .next
+          right: 0
+          top: 50%
+          transform: translateY(-50%)
+          font-size: 40px
+  .relevant-topics
+    width: 100%
+    margin: 30px 0
+    padding: 30px 150px
+    min-height: 100px
+    background: white
+    border-radius: 2px
+
+    p.title
+      font-size: 18px
+      color: $main-color
+      text-align: center
+    .topic-lists
+      list-style: none
+      text-align: justify
+      margin-top: 20px
+      &:after
+        content: ""
+        display: inline-block
+        width: 100%
+      .topic-list
+        width: 250px
+        height: 140px
+        display: inline-block
+        overflow: hidden
+        position: relative
+        &:hover
+          box-shadow: 0 0 4px 0 rgba(0,0,0,0.4)
+        .title
+          position: absolute
+          bottom: 0
+          background: rgba(0,0,0,0.6)
+          color: white
+          font-size: 14px
+          padding: 10px 5px
+          text-align: left
+
+
+
+    
+
+
+
+
+
+
+
+
+
+

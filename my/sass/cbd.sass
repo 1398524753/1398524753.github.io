@@ -1,0 +1,59 @@
+@font-face
+  font-family: "hyzyj"
+  src: url("../s_font/hyzyj.ttf")
+  src:
+    url('../s_font/hyzyj.ttf') format('embedded-opentype'), 
+    url("../s_font/hyzyj.ttf") format('ttf'),
+    url("../s_font/hyzyj.woff") format('woff'),
+    url("../s_font/hyzyj.svg") format('svg'),
+  font-weight: normal
+  font-style: normal
+
+  
+
+$main-color: #FFAA01
+$border1: 1px solid rgba(0,0,0,0.1)
+$font18: 18px
+
+
+.container
+  width: 1088px
+a
+  color: $main-color
+  text-decoration: none
+  &:hover
+    color: darken($main-color, 10%)
+i.iconfont
+  position: relative
+  top: 2px
+  margin-right: 5px
+.cover
+  position: absolute
+  z-index: 1000
+  width: 100%
+  height: 100%
+  background: rgba(0,0,0,0.4)
+  top: 0
+  left: 0
+.lazy
+  width: 100%
+  height: 100%
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+
+
+
+
+@import compass/css3
+@import commen.sass
+@import header.sass
+@import header_mobile.sass
+@import footer.sass
+@import index_main.sass
+@import topic_main.sass
+@import detail_main.sass
+
+
+
+
