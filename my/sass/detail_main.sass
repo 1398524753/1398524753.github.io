@@ -1,0 +1,462 @@
+.detail-banner
+  width: 100%
+  height: 450px
+  overflow: hidden
+  position: relative
+  .container
+    position: absolute
+    z-index: 1001
+    top: 120px
+    left: 50%
+    transform: translate(-50%)
+    color: white
+  h1.title
+    font-size: 40px
+  p.brief
+    font-size: 18px
+.order-steps
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 3000
+  background: rgba(255,255,255,0.9)
+  transition: opacity 0.3s
+  .container
+    position: absolute
+    left: 50%
+    top: 0
+    // transform: translateY(-50%)
+    margin-left: -250px
+    margin-top: 80px
+    width: 500px
+    // height: 500px
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.3)
+    padding: 50px
+    border-radius: 4px
+    background: white
+    .data-dialog-close
+      position: absolute
+      right: 0
+      font-size: 20px
+      top: 5px
+      color: rgba(0,0,0,0.2)
+      cursor: pointer
+      &:hover
+        color: $main-color
+    ul.top
+      list-style: none
+      padding-bottom: 20px
+      border-bottom: $border1
+      overflow: hidden
+      li
+        width: 20%
+        float: left
+        text-align: center
+        position: relative
+        &:after
+          content: ""
+          width: 60px
+          height: 3px
+          background: $main-color
+          position: absolute
+          top: 75%
+        .step
+          width: 20px
+          height: 20px
+          line-height: 20px
+          border-radius: 50%
+          background: $main-color
+          display: inline-block
+          color: white
+          margin-top: 10px
+      .step5-con
+        &:after
+          display: none
+    .title
+      font-size: 20px
+      color: $main-color
+      font-weight: bold
+      margin-top: 10px
+    .form-group
+      width: 100%
+      .input-group
+        width: 100%
+        position: relative
+        margin: 15px 0
+        input,textarea
+          width: 100%
+          height: 35px
+          line-height: 35px
+          border: $border1
+          padding: 0 10px
+        i.iconfont
+          position: absolute
+          display: none
+          left: 10px
+          top: 50%
+          transform: translateY(-50%)
+          color: rgba(0,0,0,0.4)
+        textarea
+          height: 60px
+          line-height: 20px
+          padding: 10px
+          resize: none
+      .submit
+        input
+          border: none
+          background: $main-color
+          color: white
+          &:hover
+            background: darken($main-color, 10%)
+      .agreement
+        text-align: center
+.dialog
+  opacity: 0
+  pointer-events: none
+  &.dialog.dialog--open
+    pointer-events: auto
+    opacity: 1
+  &.dialog--open .dialog__content, &.dialog--close .dialog__content
+    animation-duration: 1s
+    animation-timing-function: linear
+    animation-fill-mode: forwards
+  &.dialog--open .dialog__content
+    animation-name: anim-open
+  &.dialog--close .dialog__content
+    animation-name: anim-close
+    animation-duration: 0.3s
+    animation-timing-function: ease-out
+
+
+
+
+
+
+
+
+.pro-detail
+  .order-top
+    width: 100%
+    height: 50px
+    background: white
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 2000
+    box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.2)
+    line-height: 50px
+    display: none
+    transtion: 0.3s ease-in
+    .container
+      padding: 0 10px
+      position: relative
+      p.title
+        position: relative
+        margin-left: 5px
+        font-size: 20px
+        &:before
+          content: ""
+          position: absolute
+          left: -10px
+          top: 12px
+          width: 5px
+          height: 25px
+          background: $main-color
+      .pro-order
+        padding: 0 20px
+        background: $main-color
+        color: white
+        font-size: 14px
+        display: inline-block
+        line-height: 36px
+        border-radius: 4px
+        margin-top: 7px
+        position: absolute
+        right: 0
+        top: 0
+        cursor: pointer
+        &:hover
+          background: darken($main-color, 10%)
+
+  .pro-detail-top
+    background: white
+    margin: 30px auto
+    padding: 0 85px
+    border-radius: 2px
+    overflow: hidden
+    border-top: 2px solid $main-color
+    .price-info
+      width: 400px
+      margin: 0 auto
+      ul
+        list-style: none
+        overflow: hidden
+        li
+          width: 50%
+          text-align: center
+          float: left
+          font-size: 18px
+          margin: 20px 0
+      .top
+        border-bottom: $border1
+      .bottom
+        li
+          margin: 20px 0
+          height: 36px
+        .left
+          .price
+            font-size: 25px
+            color: $main-color
+          .unit
+            font-size: 12px
+            color: rgba(0,0,0,0.8)
+        .right
+          .pro-order
+            padding: 0 20px
+            background: $main-color
+            color: white
+            font-size: 14px
+            display: inline-block
+            height: 100%
+            line-height: 36px
+            border-radius: 4px
+            margin-top: 7px
+            cursor: pointer
+            &:hover
+              background: darken($main-color, 10%)
+    .detail-list
+      width: 100%
+      padding: 30px 0
+      padding-bottom: 50px
+      border-top: $border1
+      p.title
+        font-size: 18px
+        color: $main-color
+        text-align: center
+      p.detail
+        margin-top: 20px
+        line-height: 30px
+        padding: 0 80px
+        position: relative
+        .iconfont
+          position: absolute
+          color: rgba(0,0,0,0.4)
+          &:hover
+            color: $main-color
+        .previous
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+          font-size: 40px
+        .next
+          right: 0
+          top: 50%
+          transform: translateY(-50%)
+          font-size: 40px
+  .relevant-topics
+    width: 100%
+    margin: 30px 0
+    padding: 30px 150px
+    min-height: 100px
+    background: white
+    border-radius: 2px
+
+    p.title
+      font-size: 18px
+      color: $main-color
+      text-align: center
+    .topic-lists
+      list-style: none
+      text-align: justify
+      margin-top: 20px
+      &:after
+        content: ""
+        display: inline-block
+        width: 100%
+      .topic-list
+        width: 250px
+        height: 140px
+        display: inline-block
+        overflow: hidden
+        position: relative
+        &:hover
+          box-shadow: 0 0 4px 0 rgba(0,0,0,0.4)
+        .title
+          position: absolute
+          bottom: 0
+          background: rgba(0,0,0,0.6)
+          color: white
+          font-size: 14px
+          padding: 10px 5px
+          text-align: left
+
+
+
+@keyframes anim-open
+  0%
+    opacity: 0
+    transform: matrix3d(0.7, 0, 0, 0, 0, 0.7, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  2.083333%
+    transform: matrix3d(0.75266, 0, 0, 0, 0, 0.76342, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  4.166667%
+    transform: matrix3d(0.81071, 0, 0, 0, 0, 0.84545, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  6.25%
+    transform: matrix3d(0.86808, 0, 0, 0, 0, 0.9286, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  8.333333%
+    transform: matrix3d(0.92038, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  10.416667%
+    transform: matrix3d(0.96482, 0, 0, 0, 0, 1.05202, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  12.5%
+    transform: matrix3d(1, 0, 0, 0, 0, 1.08204, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  14.583333%
+    transform: matrix3d(1.02563, 0, 0, 0, 0, 1.09149, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  16.666667%
+    transform: matrix3d(1.04227, 0, 0, 0, 0, 1.08453, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  18.75%
+    transform: matrix3d(1.05102, 0, 0, 0, 0, 1.06666, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  20.833333%
+    transform: matrix3d(1.05334, 0, 0, 0, 0, 1.04355, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  22.916667%
+    transform: matrix3d(1.05078, 0, 0, 0, 0, 1.02012, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  25%
+    transform: matrix3d(1.04487, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  27.083333%
+    transform: matrix3d(1.03699, 0, 0, 0, 0, 0.98534, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  29.166667%
+    transform: matrix3d(1.02831, 0, 0, 0, 0, 0.97688, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  31.25%
+    transform: matrix3d(1.01973, 0, 0, 0, 0, 0.97422, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  33.333333%
+    transform: matrix3d(1.01191, 0, 0, 0, 0, 0.97618, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  35.416667%
+    transform: matrix3d(1.00526, 0, 0, 0, 0, 0.98122, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  37.5%
+    transform: matrix3d(1, 0, 0, 0, 0, 0.98773, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  39.583333%
+    transform: matrix3d(0.99617, 0, 0, 0, 0, 0.99433, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  41.666667%
+    transform: matrix3d(0.99368, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  43.75%
+    transform: matrix3d(0.99237, 0, 0, 0, 0, 1.00413, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  45.833333%
+    transform: matrix3d(0.99202, 0, 0, 0, 0, 1.00651, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  47.916667%
+    transform: matrix3d(0.99241, 0, 0, 0, 0, 1.00726, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  50%
+    opacity: 1
+    transform: matrix3d(0.99329, 0, 0, 0, 0, 1.00671, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  52.083333%
+    transform: matrix3d(0.99447, 0, 0, 0, 0, 1.00529, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  54.166667%
+    transform: matrix3d(0.99577, 0, 0, 0, 0, 1.00346, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  56.25%
+    transform: matrix3d(0.99705, 0, 0, 0, 0, 1.0016, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  58.333333%
+    transform: matrix3d(0.99822, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  60.416667%
+    transform: matrix3d(0.99921, 0, 0, 0, 0, 0.99884, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  62.5%
+    transform: matrix3d(1, 0, 0, 0, 0, 0.99816, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  64.583333%
+    transform: matrix3d(1.00057, 0, 0, 0, 0, 0.99795, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  66.666667%
+    transform: matrix3d(1.00095, 0, 0, 0, 0, 0.99811, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  68.75%
+    transform: matrix3d(1.00114, 0, 0, 0, 0, 0.99851, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  70.833333%
+    transform: matrix3d(1.00119, 0, 0, 0, 0, 0.99903, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  72.916667%
+    transform: matrix3d(1.00114, 0, 0, 0, 0, 0.99955, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  75%
+    transform: matrix3d(1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  77.083333%
+    transform: matrix3d(1.00083, 0, 0, 0, 0, 1.00033, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  79.166667%
+    transform: matrix3d(1.00063, 0, 0, 0, 0, 1.00052, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  81.25%
+    transform: matrix3d(1.00044, 0, 0, 0, 0, 1.00058, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  83.333333%
+    transform: matrix3d(1.00027, 0, 0, 0, 0, 1.00053, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  85.416667%
+    transform: matrix3d(1.00012, 0, 0, 0, 0, 1.00042, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  87.5%
+    transform: matrix3d(1, 0, 0, 0, 0, 1.00027, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  89.583333%
+    transform: matrix3d(0.99991, 0, 0, 0, 0, 1.00013, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  91.666667%
+    transform: matrix3d(0.99986, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  93.75%
+    transform: matrix3d(0.99983, 0, 0, 0, 0, 0.99991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  95.833333%
+    transform: matrix3d(0.99982, 0, 0, 0, 0, 0.99985, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  97.916667%
+    transform: matrix3d(0.99983, 0, 0, 0, 0, 0.99984, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+  100%
+    opacity: 1
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)  
+@keyframes anim-close
+  0%
+    opacity: 1
+
+  100%
+    opacity: 0
+    transform: scale3d(0.8, 0.8, 1)
+
+
+
+
+
+
+
+
+
