@@ -41,3 +41,27 @@ $(document).ready ->
     else if windowST < 680
       $(".order-top").css
         "display": "none"
+# 预约按钮
+$(".pro-order-js").on
+  "click": ->
+    $(".dialog").removeClass("dialog--close")
+    $(".dialog").addClass("dialog--open")
+    $(document.body).css
+      "overflow": "hidden"
+$(".data-dialog-close").on
+  "click": ->
+    $(".dialog").removeClass("dialog--open")
+    $(".dialog").addClass("dialog--close")
+    $(document.body).css
+      "overflow": "auto"
+
+
+
+
+
+
+
+
+
+
+

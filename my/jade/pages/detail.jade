@@ -9,8 +9,9 @@ block body
     .container
       h1.title 教你认识资本市场，掌握企业融资工具！
       p.brief 如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知
-  .order-steps
-    .container
+  .order-steps.dialog
+    .container.dialog__content
+      i.data-dialog-close.iconfont.icon-close
       ul.top
         li
           p 申请预约
@@ -31,10 +32,10 @@ block body
       form(action="").form-group
         .input-group
           //- i.iconfont.icon-dianhua-1
-          input(type="text" placeholder="输入手机号码")
+          input(type="number" placeholder="输入手机号码")
         .input-group
           //- i.iconfont.icon-weixin
-          input(type="text" placeholder="输入微信号码")
+          input(type="number" placeholder="输入微信号码")
         .input-group
           //- i.iconfont.icon-gongsizuzhi
           input(type="text" placeholder="输入公司名称")
