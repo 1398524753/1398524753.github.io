@@ -43,13 +43,13 @@ $(document).ready ->
         "display": "none"
 # 预约按钮
 $(".pro-order-js").on
-  "click": ->
+  "click touchstart": ->
     $(".dialog").removeClass("dialog--close")
     $(".dialog").addClass("dialog--open")
     $(document.body).css
       "overflow": "hidden"
 $(".data-dialog-close").on
-  "click": ->
+  "click touchstart": ->
     $(".dialog").removeClass("dialog--open")
     $(".dialog").addClass("dialog--close")
     $(document.body).css

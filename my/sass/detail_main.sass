@@ -284,6 +284,7 @@
         &:hover
           box-shadow: 0 0 4px 0 rgba(0,0,0,0.4)
         .title
+          width: 100%
           position: absolute
           bottom: 0
           background: rgba(0,0,0,0.6)
@@ -453,6 +454,78 @@
     transform: scale3d(0.8, 0.8, 1)
 
 
+
+@media only screen and (min-width: $large)
+
+@media only screen and (min-width: $medium) and (max-width: $large)
+
+@media only screen and (min-width: $small) and (max-width: $medium)
+
+@media only screen and (max-width : $small)
+  .detail-banner
+    height: 200px
+    .container
+      top: 0
+      left: 0
+      width: 100%
+      transform: translate(0)
+      padding: 5%
+      h1.title
+        font-size: 18px
+      p.brief
+        font-size: 14px
+  .pro-detail 
+    .pro-detail-top
+      margin: 0
+      padding: 0
+      .price-info
+        width: 100%
+        ul
+          li
+            margin: 10px 0
+        .bottom li
+          margin-top: 10px
+      .detail-list
+        padding: 10px
+        p.detail
+          padding: 0
+          margin-top: 10px
+      .comments
+        padding: 10px 0
+        border-bottom: $border1 !important
+        p.detail
+          padding: 0 30px 
+    .relevant-topics
+      padding: 10px 10px
+      margin: 0
+      .topic-lists 
+        .topic-list
+          border-radius: 4px
+          margin-bottom: 10px
+          width: 100%
+          box-shadow: 0 0 5px 0 black
+    .order-top 
+      height: auto
+      .container 
+        padding: 5px 0
+        p.title
+          font-size: 14px
+          padding-right: 100px
+          line-height: 20px
+          &:before
+            display: none
+
+  .order-steps 
+    .container
+      width: 90%
+      left: 5%
+      margin-left: 0
+      padding: 10px
+      margin-top: 50px
+      ul.top
+        display: none
+      .data-dialog-close
+        font-size: 30px
 
 
 

@@ -29,7 +29,10 @@ html(lang="zh")
   body
     div.search-engine
       img.lazy(data-original="public/img/logo/touch-icon-ipad-retina.png", alt="搜索引擎")
-    block body
+    include includes/header
+    include includes/header_mobile
+    .xd-con
+      block body
 
 
   //- *jquery.js *bootstrap.js *html5shive.js *retina.js *lazyload
