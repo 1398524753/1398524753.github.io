@@ -1,0 +1,120 @@
+header.pc
+  width: 100%
+  height: 60px
+  line-height: 60px
+  border-top: 4px solid $main-color
+  border-bottom: $border1
+  background: white
+  overflow: hidden
+  a
+    color: rgba(0,0,0,0.5)
+    font-weight: bold
+    &:hover
+      color: darken(rgba(0,0,0,0.6), 20%)
+  .container
+    height: 100%
+    .xd-logo
+      float: left
+      display: inline-block
+      width: 80px
+      height: 100%
+      font-size: 36px
+      font-family: 'hyzyj'
+      color: $main-color
+      vertical-align: middle
+      img
+        height: 70%
+        width: auto
+        margin-top: 10px
+    nav
+      float: left
+      display: inline-block
+      width: 350px
+      height: 100%
+      margin-left: 100px
+      ul
+        list-style: none
+        width: 100%
+        height: 100%
+        li
+          float: left
+          // width: 50%
+          height: 100%
+          text-align: right
+          a
+            padding: 0 20px
+
+    form.header-form
+      position: relative
+      float: right
+      height: 100%
+      line-height: 60px
+      overflow: hidden
+      margin-right: 60px
+      .header-input
+        width: 200px
+        height: 30px
+        padding: 0 15px
+        padding-right: 30px
+        border: $border1
+        border-radius: 20px
+        transition: 0.3s ease-in
+        &:focus
+          border-color: $main-color
+          width: 300px
+        &:focus + .icon-search
+          color: $main-color
+      .icon-search
+        position: absolute
+        top: 1px
+        right: 10px
+        height: 100%
+        color: rgba(0,0,0,0.4)
+        background: none
+        border: none
+    .header-signin
+      float: right
+      padding: 0 20px
+    .become-share
+      float: right
+      padding: 0 20px
+      border-left: $border1
+      height: 20px
+      line-height: 20px
+      overflow: hidden
+      margin-top: 20px
+      &:before
+        margin-right: 5px
+        position: relative
+        top: 2px
+
+
+
+@media only screen and (min-width: $large)
+
+@media only screen and (min-width: $medium) and (max-width: $large)
+
+@media only screen and (min-width: $small) and (max-width: $medium)
+
+@media only screen and (max-width : $small)
+  header.pc
+    display: none
+    height: auto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

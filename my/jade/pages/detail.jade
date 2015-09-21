@@ -1,0 +1,116 @@
+extends ../layout
+
+block body
+  .detail-banner
+    .lazy(data-original="my/img/1.jpg")
+    .cover
+    .container
+      h1.title 教你认识资本市场，掌握企业融资工具！
+      p.brief 如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知
+  .order-steps.dialog
+    .container.dialog__content
+      i.data-dialog-close.iconfont.icon-close
+      ul.top
+        li
+          p 申请预约
+          p.step 1
+        li
+          p 分享者确认
+          p.step 2
+        li
+          p 支付
+          p.step 3
+        li
+          p 上门分享
+          p.step 4
+        li.step5-con
+          p 评价
+          p.step 5
+      p.title 预约信息
+      form(action="").form-group
+        .input-group
+          //- i.iconfont.icon-dianhua-1
+          input(type="number" placeholder="输入手机号码")
+        .input-group
+          //- i.iconfont.icon-weixin
+          input(type="number" placeholder="输入微信号码")
+        .input-group
+          //- i.iconfont.icon-gongsizuzhi
+          input(type="text" placeholder="输入公司名称")
+        .input-group
+          //- i.iconfont.icon-zhiwei
+          input(type="text" placeholder="输入职位名称")
+        .input-group
+          textarea(name="", cols="30", rows="10" placeholder="备注：")
+        .input-group.submit
+          input(type="submit" value="提交")
+        .agreement
+          | 点击提交视为同意
+          a(href="") 小得服务协议
+        
+
+
+
+  .container.pro-detail
+    .order-top
+      .container
+        p.title 教你认识资本市场，掌握企业融资工具！
+        p.pro-order.pro-order-js 立即预约
+    .pro-detail-top
+      .price-info
+        ul.top
+          li.left(style="border-right: 1px solid rgba(0,0,0,0.1)")
+            i.iconfont.icon-didian
+            span.location 杭州
+          li.right
+            i.iconfont.icon-heart-empty
+            span.like 4284
+        ul.bottom
+          li.left
+            .price ¥2000
+            .unit 一次两小时
+          li.right
+            p.pro-order.pro-order-js 立即预约
+      .detail-list.explain
+        p.title
+          i.iconfont.icon-document
+          | 案例说明
+        p.detail 如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知
+      .detail-list.about-author
+        p.title
+          i.iconfont.icon-ren
+          |  关于分享者
+        p.detail 如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知
+      .detail-list.comments
+        p.title
+          i.iconfont.icon-write
+          | 往期评价
+        p.detail 如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知如果你过去一心扑在产品开发、业务拓展上，对资本市场一无所知
+          a(href="").previous.iconfont.icon-angle-left
+          a(href="").next.iconfont.icon-angle-right
+    .relevant-topics
+      p.title
+        i.iconfont.icon-youjian
+        |  相关话题
+      ul.topic-lists
+        a(href="")
+          li.topic-list
+            .lazy(data-original="my/img/1.jpg")
+            //- .cover
+            p.title 教你认识资本市场，掌握企业融资工具！
+        a(href="")
+          li.topic-list
+            .lazy(data-original="my/img/1.jpg")
+            //- .cover
+            p.title 教你认识资本市场，掌握企业融资工具！
+        a(href="")
+          li.topic-list
+            .lazy(data-original="my/img/1.jpg")
+            //- .cover
+            p.title 教你认识资本市场，掌握企业融资工具！
+
+
+  include ../includes/footer
+
+block script
+  script(src="public/js/cbd.min.js")

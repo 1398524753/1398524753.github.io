@@ -1,0 +1,102 @@
+footer.pc
+  width: 100%
+  background: white
+  .container
+    padding: 40px 0
+    overflow: hidden
+    border-bottom: $border1
+    .left
+      display: inline-block
+      float: left
+      width: 230px
+      dl
+        vertical-align: middle
+        dt
+          font-size: 25px
+          font-weight: bold
+          color: $main-color
+        dd.top
+          a
+            padding: 0 8px
+            border-right: 1px solid rgba(0,0,0,0.6)
+            color: rgba(0,0,0,0.8)
+            &:hover
+              color: $main-color
+        dd
+          margin: 20px 0
+          a
+            color: rgba(0,0,0,0.8)
+    .middle
+      display: inline-block
+      float: left
+      margin-left: 100px
+      dl
+        vertical-align: top
+        dt
+          font-size: 25px
+          font-weight: bold
+          color: $main-color
+        dd
+          margin: 20px 0
+          a
+            color: rgba(0,0,0,0.8)
+            &:hover
+              color: $main-color
+    .right
+      display: inline-block
+      float: right
+      img
+        width: 120px
+        height: 120px
+        border: 1px solid $main-color
+      p
+        width: 120px
+        text-align: center
+        padding: 10px 0
+        font-size: 13px
+
+
+
+  p
+    width: 100%
+    text-align: center
+    padding: 20px 0
+    color: rgba(0,0,0,0.6)
+
+
+
+
+@media only screen and (max-width : $small)
+  footer.pc
+    border-top: $border1
+    .container
+      width: 94%
+      margin: 0 3%
+      padding: 10px 0
+      text-align: center
+
+      .left
+        width: 100%
+        dl
+          dd
+            margin: 10px 0
+      .middle
+        margin-left: 0
+        width: 100%
+        dl
+          dd
+            margin: 10px 0
+      .right
+        display: none
+    p
+      padding: 10px 0
+
+
+
+
+
+
+
+
+
+
