@@ -55,6 +55,46 @@ $(".data-dialog-close").on
     $(document.body).css
       "overflow": "auto"
 
+# 登录判断
+$(".mobile-signin-js").on
+  "click touchstart": ->
+    if isWeiXin()
+      # window.location.href = "/user/index"
+      alert("微信")
+    else
+      $(".not-wx-alert").css
+        "display": "block"
+
+$(".icon-close-js").on
+  "click touchstart": ->
+    $(".not-wx-alert").css
+      "display": "none"
+$(".icon-ham-js").on
+  "touchstart": ->
+    if Number($(this).attr("data-navshow")) == 0
+      $(this).attr("data-navshow", "1")
+      $(document.body).addClass("menu-left-open")
+      $(".mobile-nav-js").addClass("checked")
+      $(".xd-con").css
+        "left": "200px"
+      $(".header-mobile").css
+        "left": "200px"
+    else if Number($(this).attr("data-navshow")) == 1
+      $(this).attr("data-navshow", "0")
+      $(document.body).removeClass("menu-left-open")
+      $(".mobile-nav-js").removeClass("checked")
+      $(".xd-con").css
+        "left": "0px"
+      $(".header-mobile").css
+        "left": "0px"
+
+
+# $(document.body).css
+#   "width": document.body.clientWidth + "px"
+
+      
+
+
 
 
 

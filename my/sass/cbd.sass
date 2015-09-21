@@ -9,9 +9,19 @@ $main-color: #FFAA01
 $border1: 1px solid rgba(0,0,0,0.1)
 $font18: 18px
 
+.xd-con
+  position: absolute
+  left: 0
+  width: 100%
+  transition: all 0.4s
+
+
+
+
 
 .container
   width: 1088px
+
 a
   color: $main-color
   text-decoration: none
@@ -19,8 +29,11 @@ a
     color: darken($main-color, 10%)
 i.iconfont
   position: relative
-  top: 2px
   margin-right: 5px
+  overflow: hidden
+  &:before
+    position: relative
+    top: 2px
 .cover
   position: absolute
   z-index: 1000

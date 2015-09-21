@@ -86,18 +86,6 @@
 .icon-lock:before {
   content: "h";
 }
-.icon-weixin:before {
-  content: "k";
-}
-.icon-zhiwei:before {
-  content: "q";
-}
-.icon-dianhua-1:before {
-  content: "t";
-}
-.icon-gongsizuzhi:before {
-  content: "g";
-}
 .icon-close:before {
   content: "u";
 }
@@ -112,4 +100,10 @@
 }
 .icon-caidan:before {
   content: "y";
+}
+.icon-home-1:before {
+  content: "z";
+}
+.icon-fanerhuati:before {
+  content: "g";
 }
